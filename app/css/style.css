@@ -234,3 +234,23 @@ body {
   padding: 13px 20px;
   width: 320px;
 }
+
+.footer {
+  background-color: #30292F;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.footer__line {
+  border: 1px solid rgba(218, 218, 218, 0.43);
+  margin: auto;
+  max-width: 1200px;
+  width: 80%;
+}

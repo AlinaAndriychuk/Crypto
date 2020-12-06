@@ -1,5 +1,6 @@
 $turquoise: #076572;
 $gray: #fafafa;
+$black: #30292F;
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -245,6 +246,27 @@ body {
   .table__cell {
     padding: 13px 20px;
     width: 320px;    
+  }
+
+}
+
+.footer {
+  background-color: $black;
+  color: rgba(255, 255, 255, 0.7);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    width: 80%;
+  }
+
+  &__line {
+    border: 1px solid rgba(218, 218, 218, 0.43);
+    margin: auto;
+    max-width: 1200px;
+    width: 80%;
   }
 
 }
