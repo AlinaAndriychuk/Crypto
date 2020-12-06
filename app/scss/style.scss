@@ -1,7 +1,133 @@
+$turquoise: #076572;
+
 body {
+  font-family: 'Nunito', sans-serif;
   margin: 0;
 }
 
 .header {
+  background: url(../img/header-left.png) no-repeat, url(../img/header-right.png) no-repeat;
+  background-size: cover;
+  color: #fff;
   height: 1150px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  &__logo-container {
+    margin-left: 60px;
+  }
+
+  &__logo {
+    height: 32px;
+    margin: 2px 0 0 9px;
+    width: 59px;
+  }
+
+  &__logo-title {
+    font-weight: 800;
+    font-size: 24px;
+    margin: -7px 0 0;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 75px;
+    letter-spacing: 0px;
+    width: 393px;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin: 3px;
+  }
+
+  &__link-item {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    margin: 100px 0 0 60px;
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 65px;
+    margin: 40px 60px;
+    width: 620px;
+  }
+
+  &__image {
+    left: 326px;
+    position: absolute;
+    top: 228px;
+  }
+
+  &__background-image {
+    position: absolute;
+  }
+
+  &__image-right-bottom {
+    position: absolute;
+    right: 0;
+    top: 360px;
+  }
+
+}
+
+.description {
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 18px;
+    letter-spacing: 0.55px;
+    line-height: 34px;
+    margin: 45px auto;
+    max-width: 1180px;
+    text-align: center;
+    width: 85%;
+  }
+
+}
+
+.feature {
+  height: 646px;
+
+  &__title {
+    color: $turquoise;
+    font-size: 45px;
+    font-weight: 700;
+    left: 160px;
+    line-height: 66px;
+    position: relative;
+    top: 220px;
+    width: 530px;
+  }
+
+  &__link {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    left: 160px;
+    position: relative;
+    text-decoration: none;;
+    top: 280px;
+  }
+
 }

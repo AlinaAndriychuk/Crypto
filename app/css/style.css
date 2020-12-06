@@ -1,7 +1,125 @@
 body {
+  font-family: 'Nunito', sans-serif;
   margin: 0;
 }
 
 .header {
+  background: url(../img/header-left.png) no-repeat, url(../img/header-right.png) no-repeat;
+  background-size: cover;
+  color: #fff;
   height: 1150px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.header__logo-container {
+  margin-left: 60px;
+}
+
+.header__logo {
+  height: 32px;
+  margin: 2px 0 0 9px;
+  width: 59px;
+}
+
+.header__logo-title {
+  font-weight: 800;
+  font-size: 24px;
+  margin: -7px 0 0;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 75px;
+  letter-spacing: 0px;
+  width: 393px;
+}
+
+.header__item {
+  list-style-type: none;
+  margin: 3px;
+}
+
+.header__link-item {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header__title {
+  font-size: 50px;
+  letter-spacing: 0.5px;
+  margin: 100px 0 0 60px;
+}
+
+.header__text {
+  font-size: 36px;
+  line-height: 65px;
+  margin: 40px 60px;
+  width: 620px;
+}
+
+.header__image {
+  left: 326px;
+  position: absolute;
+  top: 228px;
+}
+
+.header__background-image {
+  position: absolute;
+}
+
+.header__image-right-bottom {
+  position: absolute;
+  right: 0;
+  top: 360px;
+}
+
+.description__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 13px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.description__text {
+  font-size: 18px;
+  letter-spacing: 0.55px;
+  line-height: 34px;
+  margin: 45px auto;
+  max-width: 1180px;
+  text-align: center;
+  width: 85%;
+}
+
+.feature {
+  height: 646px;
+}
+
+.feature__title {
+  color: #076572;
+  font-size: 45px;
+  font-weight: 700;
+  left: 160px;
+  line-height: 66px;
+  position: relative;
+  top: 220px;
+  width: 530px;
+}
+
+.feature__link {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  left: 160px;
+  position: relative;
+  text-decoration: none;
+  top: 280px;
 }
