@@ -1,6 +1,8 @@
-$turquoise: #076572;
-$gray: #fafafa;
 $black: #30292F;
+$blue: #1768AC;
+$dark-gray: rgba(255, 255, 255, 0.7);
+$gray: #fafafa;
+$turquoise: #076572;
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -252,7 +254,7 @@ body {
 
 .footer {
   background-color: $black;
-  color: rgba(255, 255, 255, 0.7);
+  color: $dark-gray;
 
   &__container {
     display: flex;
@@ -267,6 +269,80 @@ body {
     margin: auto;
     max-width: 1200px;
     width: 80%;
+  }
+
+  &__link-container {
+    margin: 19px 0 35px;
+  }
+
+  &__link {
+    color: $dark-gray;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &__link:first-child {
+    margin-right: 27px;
+  }
+
+  &__link--large {
+    font-size: 18px;
+  }
+
+  &__link--large:first-child {
+    margin-right: 17px;
+  }
+
+}
+
+.contacts {
+  margin: 65px 0 30px;
+
+  &__link-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__link {
+    color: $dark-gray;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  &__link-image {
+    fill: #fff; 
+  }
+
+}
+
+.form {
+
+  &__text {
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+
+  &__input {
+    border: none;
+    font-size: 14px;
+    margin-right: -6px;
+    padding: 16px 19px;
+  }
+
+  &__input::placeholder {
+    color: rgba(62, 61, 61, 0.5);
+  }
+
+  &__button {
+    background: $blue;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Avenir', sans-serif;
+    padding: 16.5px 24.5px;
   }
 
 }
