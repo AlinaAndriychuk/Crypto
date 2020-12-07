@@ -7,10 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="shortcut icon" href="img/logo-icon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link href="//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica" rel="stylesheet" type="text/css"/>
   <link href="//db.onlinewebfonts.com/c/275de2221d9f0c4c9257d17f5a1e4006?family=Avenir+Black" rel="stylesheet" type="text/css"/>
   <title>Crypto</title>
@@ -20,79 +17,96 @@
   <header class="header">
     <img class="header__background-image" src="img/header-bottom.png" alt="">
     <img class="header__background-image" src="img/header-top.png" alt="">
-    <nav class="header__nav">
-      <div class="header__logo-container">
-        <img class="header__logo" src="img/logo.png" alt="Logo">
-        <p class="header__logo-title">
-          Crypto
-        </p>
-      </div>
-      <menu class="header__menu">
-        <li class="header__item">
-          <a class="header__link-item" href="#">About</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link-item" href="#">Products</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link-item" href="#">Rate</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link-item" href="#">Support</a>
-        </li>
-      </menu>
-    </nav>
-    <h1 class="header__title">
-      Buy and Sell Cryptos easier than ever
-    </h1>
-    <p class="header__text">
-      With our new finance app, you will ever be on track of all transactions in a smart and easy way.
-    </p>
-    <img class="header__image" src="img/header-main.png" alt="">
+    <div class="container">
+      <nav class="header__nav">
+        <div class="header__logo-container">
+          <img class="header__logo" src="img/logo.png" alt="Logo">
+          <p class="header__logo-title">
+            Crypto
+          </p>
+        </div>
+        <menu class="header__menu">
+          <li class="header__item">
+            <a class="header__link-item" href="#about">About</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link-item" href="#products">Products</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link-item" href="#rate">Rate</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link-item" href="#support">Support</a>
+          </li>
+        </menu>
+      </nav>
+      <h1 class="header__title">
+        Buy and Sell Cryptos easier than ever
+      </h1>
+      <p class="header__text">
+        With our new finance app, you will ever be on track of all transactions in a smart and easy way.
+      </p>
+      <img class="header__image" src="img/header-main.png" alt="">
+    </div>
     <img class="header__image-right-bottom" src="img/B.png" alt="">
   </header>
   <section class="description">
-    <h3 class="description__title">
+    <h3 class="description__title" id="about">
       Welcome to crypto
     </h3>
     <p class="description__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor imperdiet tincidunt. Nullam nec nulla tortor. Maecenas eros est, tempus sed placerat non, laoreet vitae diam. Aenean eu pretium risus. Pellentesque vel lorem tempus, aliquet justo eleifend, commodo nunc. Aliquam sed libero malesuada, venenatis augue in, ornare lectus. Praesent convallis luctus risus, nec iaculis lectus luctus nec. Suspendisse ut pharetra sapien. Donec mi enim, auctor eu semper id, tincidunt a est. Donec justo arcu, rutrum porta urna in, interdum pulvinar ante. Praesent a elementum augue.
     </p>
   </section>
-  <section class="feature feature--left">
-    <div class="feature__text-container">
-      <h2 class="feature__title">
-        Browse through a range of our crypto Products.
-      </h2>
-      <a class="feature__link" href="#">View More
-        <img class="feature__link-image" src="img/bluearrow.png" alt="">
-      </a>
+  <section class="feature feature--left" id="products">
+    <div class="container">
+      <div class="feature__text-container">
+        <h2 class="feature__title">
+          Browse through a range of our crypto Products.
+        </h2>
+        <a class="feature__link" href="#">View More
+          <svg class="feature__link-image" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.8037 9.53898L9.63754 0.200536C9.50671 0.0670326 9.35583 0 9.18533 0C9.01502 0 8.86436 0.0670326 8.73326 0.200536L7.74968 1.20252C7.61858 1.33609 7.55313 1.48953 7.55313 1.66346C7.55313 1.83739 7.61858 1.99083 7.74968 2.12441L15.4799 10.0001L7.74975 17.8761C7.61865 18.0097 7.5532 18.1634 7.5532 18.3368C7.5532 18.5107 7.61865 18.6644 7.74975 18.798L8.73332 19.7997C8.86436 19.9334 9.01502 20 9.1854 20C9.35611 20 9.50678 19.9332 9.63754 19.7997L18.8037 10.4612C18.9348 10.3277 19.0001 10.1739 19.0001 10.0002C19.0001 9.82656 18.9348 9.67284 18.8037 9.53898Z"/>
+            <path d="M11.4473 10.0002C11.4473 9.82656 11.382 9.67277 11.2505 9.53898L2.08489 0.200536C1.95385 0.0670326 1.80298 0 1.63254 0C1.4621 0 1.31116 0.0670326 1.18012 0.200536L0.196756 1.20259C0.0654476 1.33616 0 1.4896 0 1.66353C0 1.83747 0.0654476 1.9909 0.196756 2.12448L7.92674 10.0002L0.196756 17.8761C0.0654476 18.0097 0 18.1634 0 18.3368C0 18.5107 0.0654476 18.6644 0.196756 18.798L1.18006 19.7997C1.31116 19.9334 1.46203 20 1.63247 20C1.80291 20 1.95378 19.9332 2.08489 19.7997L11.2505 10.4612C11.382 10.3277 11.4473 10.1739 11.4473 10.0002Z"/>
+          </svg>          
+        </a>
+      </div>
     </div>
   </section>
-  <section class="feature feature--right">
-    <div class="feature__text-container">
-      <h2 class="feature__title">
-        See a graphical representation of your finances via our crypto chart
-      </h2>
-      <p class="feature__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor imperdiet tincidunt. Nullam nec nulla tortor. 
-      </p>
-      <a class="feature__link" href="#">View More
-        <img class="feature__link-image" src="img/bluearrow.png" alt="">
-      </a>
+  <section class="feature feature--right" id="rate">
+    <div class="container">
+      <div class="feature__text-container">
+        <h2 class="feature__title">
+          See a graphical representation of your finances via our crypto chart
+        </h2>
+        <p class="feature__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor imperdiet tincidunt. Nullam nec nulla tortor. 
+        </p>
+        <a class="feature__link" href="#">View More
+          <svg class="feature__link-image" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.8037 9.53898L9.63754 0.200536C9.50671 0.0670326 9.35583 0 9.18533 0C9.01502 0 8.86436 0.0670326 8.73326 0.200536L7.74968 1.20252C7.61858 1.33609 7.55313 1.48953 7.55313 1.66346C7.55313 1.83739 7.61858 1.99083 7.74968 2.12441L15.4799 10.0001L7.74975 17.8761C7.61865 18.0097 7.5532 18.1634 7.5532 18.3368C7.5532 18.5107 7.61865 18.6644 7.74975 18.798L8.73332 19.7997C8.86436 19.9334 9.01502 20 9.1854 20C9.35611 20 9.50678 19.9332 9.63754 19.7997L18.8037 10.4612C18.9348 10.3277 19.0001 10.1739 19.0001 10.0002C19.0001 9.82656 18.9348 9.67284 18.8037 9.53898Z"/>
+            <path d="M11.4473 10.0002C11.4473 9.82656 11.382 9.67277 11.2505 9.53898L2.08489 0.200536C1.95385 0.0670326 1.80298 0 1.63254 0C1.4621 0 1.31116 0.0670326 1.18012 0.200536L0.196756 1.20259C0.0654476 1.33616 0 1.4896 0 1.66353C0 1.83747 0.0654476 1.9909 0.196756 2.12448L7.92674 10.0002L0.196756 17.8761C0.0654476 18.0097 0 18.1634 0 18.3368C0 18.5107 0.0654476 18.6644 0.196756 18.798L1.18006 19.7997C1.31116 19.9334 1.46203 20 1.63247 20C1.80291 20 1.95378 19.9332 2.08489 19.7997L11.2505 10.4612C11.382 10.3277 11.4473 10.1739 11.4473 10.0002Z"/>
+          </svg>    
+        </a>
+      </div>
     </div>
   </section>
-  <section class="feature feature--center">
-    <div class="feature__text-container">
-      <h2 class="feature__title">
-        Manage Crypto<br>Wallets
-      </h2>
-      <p class="feature__text">
-        Manage your digital or traditional money crypto wallets.
-      </p>
-      <a class="feature__link" href="#">View More
-        <img class="feature__link-image" src="img/bluearrow.png" alt="">
-      </a>
+  <section class="feature feature--center" id="support">
+    <div class="container">
+      <div class="feature__text-container">
+        <h2 class="feature__title">
+          Manage Crypto<br>Wallets
+        </h2>
+        <p class="feature__text">
+          Manage your digital or traditional money crypto wallets.
+        </p>
+        <a class="feature__link" href="#">View More
+          <svg class="feature__link-image" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.8037 9.53898L9.63754 0.200536C9.50671 0.0670326 9.35583 0 9.18533 0C9.01502 0 8.86436 0.0670326 8.73326 0.200536L7.74968 1.20252C7.61858 1.33609 7.55313 1.48953 7.55313 1.66346C7.55313 1.83739 7.61858 1.99083 7.74968 2.12441L15.4799 10.0001L7.74975 17.8761C7.61865 18.0097 7.5532 18.1634 7.5532 18.3368C7.5532 18.5107 7.61865 18.6644 7.74975 18.798L8.73332 19.7997C8.86436 19.9334 9.01502 20 9.1854 20C9.35611 20 9.50678 19.9332 9.63754 19.7997L18.8037 10.4612C18.9348 10.3277 19.0001 10.1739 19.0001 10.0002C19.0001 9.82656 18.9348 9.67284 18.8037 9.53898Z"/>
+            <path d="M11.4473 10.0002C11.4473 9.82656 11.382 9.67277 11.2505 9.53898L2.08489 0.200536C1.95385 0.0670326 1.80298 0 1.63254 0C1.4621 0 1.31116 0.0670326 1.18012 0.200536L0.196756 1.20259C0.0654476 1.33616 0 1.4896 0 1.66353C0 1.83747 0.0654476 1.9909 0.196756 2.12448L7.92674 10.0002L0.196756 17.8761C0.0654476 18.0097 0 18.1634 0 18.3368C0 18.5107 0.0654476 18.6644 0.196756 18.798L1.18006 19.7997C1.31116 19.9334 1.46203 20 1.63247 20C1.80291 20 1.95378 19.9332 2.08489 19.7997L11.2505 10.4612C11.382 10.3277 11.4473 10.1739 11.4473 10.0002Z"/>
+          </svg>    
+        </a>
+      </div>
     </div>  
   </section>
   <section class="feature feature--gray">
@@ -118,13 +132,13 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="contacts">
-        <a class="contacts__link" href="#">
+        <p class="contacts__title" href="#">
           Contacts Us
-        </a>
+        </p>
         <div class="contacts__link-container">
           <a href="#">
             <svg class="contacts__link-image" width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.81232 10.396L7.2998 16.6143L10.5382 13.3759L16.0905 17.7891L20 0.210938L0 8.54163L4.81232 10.396ZM14.285 5.25427L8.1633 10.8379L7.40082 13.7116L5.99228 10.1896L14.285 5.25427Z" fill="white"/>
+              <path d="M4.81232 10.396L7.2998 16.6143L10.5382 13.3759L16.0905 17.7891L20 0.210938L0 8.54163L4.81232 10.396ZM14.285 5.25427L8.1633 10.8379L7.40082 13.7116L5.99228 10.1896L14.285 5.25427Z"/>
             </svg>              
           </a>
           <a href="#">
@@ -133,8 +147,8 @@
             </svg>
           </a>
           <a href="#">
-            <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.5098 0H2.49023C1.11723 0 0 1.11723 0 2.49023V14.5098C0 15.8828 1.11723 17 2.49023 17H7.50391V10.9902H5.51172V8.00195H7.50391V5.97656C7.50391 4.32873 8.84435 2.98828 10.4922 2.98828H13.5137V5.97656H10.4922V8.00195H13.5137L13.0156 10.9902H10.4922V17H14.5098C15.8828 17 17 15.8828 17 14.5098V2.49023C17 1.11723 15.8828 0 14.5098 0Z" fill="white"/>
+            <svg class="contacts__link-image" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5098 0H2.49023C1.11723 0 0 1.11723 0 2.49023V14.5098C0 15.8828 1.11723 17 2.49023 17H7.50391V10.9902H5.51172V8.00195H7.50391V5.97656C7.50391 4.32873 8.84435 2.98828 10.4922 2.98828H13.5137V5.97656H10.4922V8.00195H13.5137L13.0156 10.9902H10.4922V17H14.5098C15.8828 17 17 15.8828 17 14.5098V2.49023C17 1.11723 15.8828 0 14.5098 0Z"/>
             </svg>              
           </a>
         </div>
