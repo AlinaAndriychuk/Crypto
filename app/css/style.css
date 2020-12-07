@@ -11,9 +11,10 @@ body {
 }
 
 .header {
-  background: url(../img/header-left.png) bottom no-repeat, url(../img/header-right.png) bottom no-repeat;
+  background: url(../img/header-left.png) bottom left no-repeat, url(../img/header-right.png) bottom left no-repeat;
   background-size: cover;
   color: #fff;
+  position: relative;
 }
 
 .header .container {
@@ -66,15 +67,18 @@ body {
   font-size: 50px;
   font-weight: 800;
   letter-spacing: 0.5px;
-  margin: 100px 0 0 60px;
+  margin: 100px 0 0;
+  padding: 0 60px;
 }
 
 .header__text {
+  box-sizing: border-box;
   font-size: 36px;
   letter-spacing: 1px;
   line-height: 68px;
-  margin: 30px 60px;
-  width: 635px;
+  margin: 30px 0;
+  padding: 0 60px;
+  width: 780px;
 }
 
 .header__image {
@@ -82,7 +86,7 @@ body {
   max-width: 1114px;
   position: absolute;
   right: 0;
-  width: 78%;
+  width: 85%;
 }
 
 .header__background-image {
@@ -90,9 +94,9 @@ body {
 }
 
 .header__image-right-bottom {
+  bottom: -107px;
   position: absolute;
   right: 0;
-  top: 360px;
 }
 
 .description__title {
@@ -349,4 +353,79 @@ body {
   color: #fff;
   font-family: 'Avenir', sans-serif;
   padding: 16.5px 24.5px;
+}
+
+@media screen and (max-width: 1050px) {
+  .header .container {
+    height: 1000px;
+  }
+  .header__title {
+    max-width: 520px;
+  }
+  .header__text {
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 640px;
+    width: 100%;
+  }
+  .header__background-image {
+    width: 342px;
+  }
+  .header__background-image:first-child {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header .container {
+    height: 700px;
+  }
+  .header__logo-container {
+    margin-left: 20px;
+  }
+  .header__title {
+    font-size: 40px;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  .header__text {
+    font-size: 20px;
+    line-height: normal;
+    max-width: 450px;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+  .header__background-image {
+    width: 190px;
+  }
+  .header__background-image:first-child {
+    width: 250px;
+  }
+  .header__image-right-bottom {
+    bottom: -50px;
+    width: 300px;
+  }
+  .header__image {
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .container {
+    height: 650px;
+  }
+  .header__logo-container {
+    margin-left: 20px;
+  }
+  .header__title {
+    font-size: 30px;
+    max-width: 280px;
+    padding: 0 20px;
+  }
+  .header__text {
+    font-size: 18px;
+  }
+  .header__image {
+    width: 100%;
+  }
 }
