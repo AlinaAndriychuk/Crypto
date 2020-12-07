@@ -113,8 +113,8 @@ body {
   line-height: 34px;
   margin: 45px auto;
   max-width: 1180px;
+  padding: 20px;
   text-align: center;
-  width: 85%;
 }
 
 .feature {
@@ -408,6 +408,11 @@ body {
   .header__image {
     bottom: 40px;
   }
+  .description__text {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 45px 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -427,5 +432,9 @@ body {
   }
   .header__image {
     width: 100%;
+  }
+  .description__title,
+  .description__text {
+    padding: 0 10px;
   }
 }
