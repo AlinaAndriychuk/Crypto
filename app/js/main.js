@@ -31,11 +31,11 @@ $(function() {
     for (let i = 0; i < arrayOfUsers.length; i++) {
       $(".table__body").append(
         $("<tr></tr>").append(
-          $("<th></th>").text(arrayOfUsers[i].id).addClass("table__cell"),
-          $("<td></td>").text(arrayOfUsers[i].name).addClass("table__cell"),
-          $("<td></td>").text(arrayOfUsers[i].symbol).addClass("table__cell"),
-          $("<td></td>").text(arrayOfUsers[i].priceUsd).addClass("table__cell")
-        )       
+          $("<td></td>").text(arrayOfUsers[i].id).addClass("table__cell").attr("data-label", "Id"),
+          $("<td></td>").text(arrayOfUsers[i].name).addClass("table__cell").attr("data-label", "Name"),
+          $("<td></td>").text(arrayOfUsers[i].symbol).addClass("table__cell").attr("data-label", "Symbol"),
+          $("<td></td>").text(arrayOfUsers[i].priceUsd).addClass("table__cell").attr("data-label", "Price in USD")
+        ).addClass("table__row")     
       )
     }
 

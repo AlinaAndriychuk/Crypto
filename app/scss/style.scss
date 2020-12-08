@@ -239,7 +239,7 @@ body {
 .feature--gray {
   background-color: $gray;
   box-sizing: border-box;
-  padding: 65px 0;
+  padding: 65px 20px;
 }
 
 .table {
@@ -247,15 +247,19 @@ body {
   border-collapse: collapse;
   font-family: "Helvetica Neue", sans-serif;
   margin: auto;
+  
+  &__row {
+    border-bottom: 2px solid $gray;
+  }
 
   &__cell {
     box-sizing: border-box;
-    border-bottom: 2px solid $gray;
     padding: 25px 20px 50px;
     text-align: left;
   }
 
-  .table__cell:first-child {
+  &__cell:first-child {
+    font-weight: bold;
     padding-right: 0;
     width: 128px;
   }
@@ -611,7 +615,56 @@ body {
 
   }
 
-}
+  .table {
+
+    .table__header-row {
+      display: none;
+    }
+
+    .table__row {
+      display: block;
+    }
+
+    &__cell {
+      display: block;
+      padding: 10px;
+      text-align: right;
+      width: 330px;
+    }
+
+    .table &__cell:first-child {
+      font-weight: normal;
+      padding: 10px;
+      width: 330px;
+    }
+
+    &__cell::before {
+      content: attr(data-label);
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      text-align: left;
+      width: 97px;
+    }
+
+  }
+
+  .footer {
+
+    &__container {
+      display: block;
+    }
+
+  }
+
+  .contacts {
+    margin: 0 auto 30px;
+    padding-top: 65px;
+    width: 98px;
+  }
+
+} 
 
 @media screen and (max-width: 400px) {
 
@@ -690,6 +743,24 @@ body {
       background-position: right -10px top 380px, 10px 320px;
     }
 
+  }
+
+  .feature--gray {
+   padding: 65px 2%; 
+  }
+
+  .table__cell {
+    text-align: left;
+    width: 230px;
+  }
+
+  .table__cell::before {
+    float: none;
+    margin-bottom: 5px;
+  }
+
+  .table .table__cell:first-child {
+    width: 230px;
   }
 
 }
