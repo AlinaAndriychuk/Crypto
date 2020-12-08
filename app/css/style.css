@@ -220,7 +220,7 @@ body {
 .feature--gray {
   background-color: #fafafa;
   box-sizing: border-box;
-  padding: 65px 20px;
+  padding: 65px 50px;
 }
 
 .table {
@@ -270,6 +270,7 @@ body {
 
 .footer__line {
   border: 1px solid rgba(218, 218, 218, 0.43);
+  border-top: none;
   margin: auto;
   max-width: 1200px;
   width: 80%;
@@ -334,8 +335,8 @@ body {
   border: none;
   border-radius: 3px;
   font-size: 14px;
-  margin-right: -6px;
-  padding: 16px 19px;
+  margin-right: -9px;
+  padding: 16.1px 19px;
 }
 
 .form__input::placeholder {
@@ -348,7 +349,9 @@ body {
   border-radius: 3px;
   color: #fff;
   font-family: 'Avenir', sans-serif;
-  padding: 16.5px 24.5px;
+  padding: 16.4px 24.5px;
+  position: relative;
+  top: -0.2px;
 }
 
 @media screen and (max-width: 1370px) {
@@ -536,13 +539,20 @@ body {
     text-align: left;
     width: 97px;
   }
-  .footer__container {
+  .footer__container:first-child {
     display: block;
+  }
+  .footer__link-container {
+    width: 98px;
   }
   .contacts {
     margin: 0 auto 30px;
     padding-top: 65px;
     width: 98px;
+  }
+  .form {
+    margin: 0 auto 30px;
+    width: fit-content;
   }
 }
 
@@ -607,5 +617,25 @@ body {
   }
   .table .table__cell:first-child {
     width: 230px;
+  }
+  .footer__container {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .footer__container:last-child {
+    padding: 0 10px;
+  }
+  .footer__link {
+    margin-top: 20px;
+  }
+  .footer__line {
+    width: 94%;
+  }
+  .form__input {
+    padding: 16px 19px;
+    width: 150px;
+  }
+  .form__button {
+    top: -1px;
   }
 }
