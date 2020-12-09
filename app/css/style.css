@@ -51,6 +51,10 @@ body {
   width: 393px;
 }
 
+.header__burger-menu {
+  display: none;
+}
+
 .header__item {
   list-style-type: none;
   margin: 3px;
@@ -393,6 +397,29 @@ body {
     max-width: 640px;
     width: 100%;
   }
+  .header__menu {
+    box-sizing: border-box;
+    display: none;
+    margin: 0;
+    padding: 10px 60px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .header__burger-menu {
+    display: inline-block;
+    height: 50px;
+    margin-right: 60px;
+    padding-top: 7px;
+    width: 70px;
+  }
+  .header__item {
+    margin: 20px 0;
+    text-align: right;
+  }
+  .open-menu {
+    display: block;
+  }
   .feature .container {
     height: 800px;
   }
@@ -439,6 +466,18 @@ body {
   .header__logo-container {
     margin-left: 20px;
   }
+  .header__menu {
+    padding-right: 20px;
+  }
+  .header__burger-menu {
+    height: 40px;
+    margin-right: 20px;
+    padding-top: 13px;
+    width: 55px;
+  }
+  .header__item {
+    margin: 10px 0;
+  }
   .header__title {
     font-size: 40px;
     margin-top: 50px;
@@ -461,7 +500,7 @@ body {
   }
   .feature .container {
     height: 720px;
-    width: 400px;
+    width: 385px;
   }
   .feature .feature__title {
     font-size: 32px;
