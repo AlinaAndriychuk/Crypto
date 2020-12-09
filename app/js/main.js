@@ -3,7 +3,7 @@
 $(function() {
   $(".header__burger-menu").on("click", function() {
     $(".header__menu").toggleClass("open-menu");
-    $(".header__burger-menu").fadeOut();
+    $(".header__burger-menu").fadeOut(0);
   });
 
   $(".header__link-item").on("click", function(event) {
@@ -40,6 +40,13 @@ $(function() {
         ).addClass("table__row")     
       )
     }
-
   };
+
+  $(".form").on("submit", function() {
+    let value = $(".form__input").val();
+    let date = new Date(Date.now() + 2592000e3);
+    date = date.toUTCString();
+    document.cookie = document.cookie = encodeURIComponent("email") + '=' + encodeURIComponent(value) + "; expires=" + date;
+    return false;
+  })
 });  

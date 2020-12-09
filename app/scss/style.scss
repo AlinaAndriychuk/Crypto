@@ -366,6 +366,7 @@ body {
     font-size: 14px;
     margin-right: -9px;
     padding: 16.1px 19px;
+    width: 145px;
   }
 
   &__input::placeholder {
@@ -664,6 +665,10 @@ body {
 
   }
 
+  .feature--gray {
+    padding: 65px 0;
+  }
+
   .table {
 
     .table__header-row {
@@ -847,7 +852,6 @@ body {
 
     &__input {
       padding: 16px 19px;
-      width: 150px;
     }
 
     &__button {

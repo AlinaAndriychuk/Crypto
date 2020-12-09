@@ -341,6 +341,7 @@ body {
   font-size: 14px;
   margin-right: -9px;
   padding: 16.1px 19px;
+  width: 145px;
 }
 
 .form__input::placeholder {
@@ -552,6 +553,9 @@ body {
     left: 0;
     width: 100%;
   }
+  .feature--gray {
+    padding: 65px 0;
+  }
   .table .table__header-row {
     display: none;
   }
@@ -672,7 +676,6 @@ body {
   }
   .form__input {
     padding: 16px 19px;
-    width: 150px;
   }
   .form__button {
     top: -1px;
