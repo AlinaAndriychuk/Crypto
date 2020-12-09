@@ -418,6 +418,9 @@ body {
     margin: 20px 0;
     text-align: right;
   }
+  .hide-menu {
+    display: none;
+  }
   .open-menu {
     display: block;
   }
