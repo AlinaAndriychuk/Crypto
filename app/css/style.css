@@ -47,7 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-right: 75px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   width: 393px;
 }
 
