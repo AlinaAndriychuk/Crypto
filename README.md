@@ -1,3 +1,3 @@
 # Crypto
-
-[Link](https://alinaandriychuk.github.io/Crypto/app/)
+Home page
+[Link](https://crypto-markup.netlify.app/)
